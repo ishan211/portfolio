@@ -12,7 +12,7 @@ function updateDate() {
 
 // Typing Animation
 let typingText = document.getElementById('typing-text');
-let texts = ["coding", "making games", "machine learning", "solving problems"];
+let texts = ["coding", "making not games", "machine learning", "solving problems"];
 let index = 0;
 let charIndex = 0;
 let currentText = '';
