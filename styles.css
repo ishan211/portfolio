@@ -304,3 +304,252 @@ a.footer_link:active {
   text-decoration: none;
   color: #00b8ff;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 0;
+    padding-top: 60px;
+  }
+
+  /* Mobile sidebar - horizontal at top */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    background-color: #0d0d0d;
+    border-bottom: 2px solid #00b8ff;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .sidebar ul li {
+    margin: 0;
+  }
+
+  .sidebar ul li a {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  /* Home section */
+  #home {
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+  #home h1 {
+    font-size: 8vw;
+    margin: 5px 0;
+  }
+
+  #home h2 {
+    font-size: 9vw;
+    margin: 5px 0;
+  }
+
+  #home h3 {
+    font-size: 5vw;
+  }
+
+  #home p {
+    font-size: 4vw;
+    margin-bottom: 10px;
+    padding: 0 10px;
+  }
+
+  .heading-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  /* Sections */
+  .section {
+    padding: 40px 15px;
+  }
+
+  .section h2 {
+    font-size: 7vw;
+    margin-bottom: 20px;
+  }
+
+  /* About section */
+  #about .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about .profile-photo {
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+  }
+
+  #about p {
+    font-size: 4vw;
+    padding: 0 10px;
+    margin: 10px 0;
+  }
+
+  /* Buttons */
+  .cta-button, .modal-button {
+    padding: 12px 24px;
+    font-size: 4vw;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+
+  /* Experience section */
+  .collapsible {
+    padding: 12px 15px;
+    font-size: 4vw;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .content {
+    padding: 15px;
+    font-size: 3.5vw;
+  }
+
+  .content ul {
+    padding-left: 20px;
+  }
+
+  .content ul li {
+    margin-bottom: 8px;
+  }
+
+  .resume-button {
+    padding: 12px 24px;
+    font-size: 4vw;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+
+  /* Projects section */
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .project {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .project h3 {
+    font-size: 5vw;
+    margin-bottom: 10px;
+  }
+
+  .project p {
+    font-size: 4vw;
+    margin-bottom: 15px;
+  }
+
+  /* Modal */
+  .modal {
+    padding-top: 20px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: none;
+    padding: 20px;
+    margin: 10% auto;
+  }
+
+  .modal-content h3 {
+    font-size: 6vw;
+    margin-bottom: 15px;
+  }
+
+  .modal-content p {
+    font-size: 4vw;
+    margin: 10px 0;
+  }
+
+  .close {
+    font-size: 30px;
+  }
+
+  .gallery img {
+    max-height: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .repo-button,
+  .launch-button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 4vw;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 10px;
+  }
+
+  footer p {
+    font-size: 3vw;
+    line-height: 1.6;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
+/* Tablet and small desktop */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    padding-left: 80px;
+  }
+
+  .sidebar ul li a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  #home h1 {
+    font-size: 5vw;
+  }
+
+  #home h2 {
+    font-size: 6vw;
+  }
+
+  .section {
+    padding: 50px 30px;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  #about .profile-photo {
+    width: 180px;
+    height: 180px;
+  }
+}
+

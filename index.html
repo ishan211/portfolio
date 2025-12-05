@@ -24,8 +24,8 @@
             <h1>I love </h1><h2><span id="typing-text"></span></h2>
         </div>
         <br>
-        <p>I'm a first year computer engineering student at the University of Waterloo</p>
-        <p>with experience in Machine Learning, Software Engineering, Web Dev, and am currently learning low-level development with Rust</p>
+        <p>I'm a Computer Engineering student at the University of Waterloo,</p>
+        <p>with experience in Machine Learning, Software Engineering, Web Dev, and I'm currently learning low-level development with Rust</p>
         <p>I graduate in 2029 and am excited to be working with you.</p>
         <a href="#contact" class="cta-button">Get in Touch</a>
     </section>
@@ -34,7 +34,7 @@
         <h2>About Me</h2>
         <div class="about-content">
             <img src="./assets/ishan_leung.jpg" alt="Ishan Leung" class="profile-photo">
-            <p>Hi! I'm Ishan, a computer engineering student who's in his first year at the University of Waterloo.</p>
+            <p>Hi! I'm Ishan, a Computer Engineering student who's in his first year at the University of Waterloo.</p>
             <p>I love building things and solving complex problems.</p>
             <p>Through my personal projects, I have developed a passion for designing unique solutions to problems. I enjoy the feeling of seeing a problem and designing a solution to address it - and I love gaining new tips and tricks along the way.</p>
             <p>Keep scrolling to check out some of my favourite and most recent projects. Feel free to look at my Github to see all my projects.</p>
@@ -77,11 +77,12 @@
                       </li>                      
             </ul>
         </div>
+        <!--
         <button class="collapsible">UW Formula Electric, <em> Electric, Traction Team Member</em> <span>&#91;</span>Sep. 2024 - Dec. 2024<span>&#93;</span></button>
         <div class="content">
             <p>Joined the UWaterloo Formula Electric team on The Electric and Traction subteams.</p>
             <ul>
-                <li style="text-align:left";>Designed Multi-Layer PCBs in KiCAD 8.0 for car’s brake lights</li>
+                <li style="text-align:left";>Designed Multi-Layer PCBs in KiCAD 8.0 for car's brake lights</li>
                 <li style="text-align:left";>Designed and Milled Rear Motor Mounts in Solidworks 2025 and produced using a CNC Milling Machine</li>
             </ul>
         </div>
@@ -95,6 +96,7 @@
                 <li style="text-align:left";>Developed firmware to read IMU data and actuate mechanical airbrakes using a servo-controlled rotating cam</li>
             </ul>
         </div>
+        -->
         <button class="collapsible">Kinetic Tutoring, <em>Tutor</em> <span>&#91;</span>2021 - Present<span>&#93;</span></button>
         <div class="content">
             <p>Self employed, paid tutor for STEM based courses such as Physics, Math, Chemistry, and CS.</p>
@@ -144,7 +146,8 @@
             <div class="project">
                 <div class="project-info">
                     <h3>IshanOS</h3>
-                    <p>A fully functional operating system made in x86-16 bit Assembly to run on a [x]</p>
+                    <!--<p>A fully functional operating system made in x86-16 bit Assembly to run on a [x]</p>-->
+                    <p>A fully functional operating system made in x86-16 bit Assembly to run on an Intel 8086 in Real Mode.</p>
                     <button class="modal-button" data-modal="modal1">Read More</button>
                 </div>
             </div>
@@ -165,14 +168,14 @@
             <div class="project">
                 <div class="project-info">
                     <h3>iSearch</h3>
-                    <p>iSearch is a robust search engine written from scratch using Rust</p>
+                    <p>iSearch is a robust multithreaded search engine written from scratch using Rust</p>
                     <button class="modal-button" data-modal="modal4">Read More</button>
                 </div>
             </div>
             <div class="project">
                 <div class="project-info">
                     <h3>GoChat</h3>
-                    <p>A simple TCP chat application with a TUI made in GO.</p>
+                    <p>A simple TCP chat application with a TUI made in GoLang.</p>
                     <button class="modal-button" data-modal="modal5">Read More</button>
                 </div>
             </div>
@@ -214,7 +217,7 @@
                 <img src="./assets/ishanos.png" alt="Image of IshanOS booting up" style="max-height:19.75vw; display:block; margin-left:auto; margin-right:auto;">
             </div>
             <p>Created using: x86-16 Assembly</p>
-            <p>A fully functional operating system made in x86-16 bit Assembly to run on a [x]. Featuring games, a text editor, a FAT12 file system, and a simple BASIC-style interpreted programming language. IshanOS is less than 1.44MB and can fit entirely on a single 3.5" Floppy Diskette.</p>
+            <p>A fully functional operating system made in x86-16 bit Assembly to run on an Intel 8086 in real mode. Featuring a simple TUI housing a Shell, Bootloader, and Kernel. The shell contains the following commands: info, help, clear, reboot, about. Info has the specs of the machine, help contains all commands and their uses, clear clears the screen, reboot will refresh the OS, and about gives developer information and version history of IshanOS. IshanOS is less than 1.44MB and can fit entirely on a single 3.5" Floppy Diskette.</p>
             <a href="https://github.com/ishan211/IshanOS" target="_blank" class="repo-button">Open Repository</a>
             <!-- <a href="./proj/caffeine-buddy/index.html" target="_blank" class="launch-button">Launch Project</a> -->
         </div>
@@ -244,7 +247,7 @@
           <p>Created using: Python [Tensorflow, Numpy]</p>
           <p>A Machine Learning Implementation Using Tensorflow to Create A Convolutional Neural Network (CNN) to Identify Tumors from Magnetic Resonance Imaging (MRI) Brain Scans with ~ 98% accuracy.</p>
           <a href="https://github.com/ishan211/NeuroScan.ai/" target="_blank" class="repo-button">Open Repository</a>
-          <a href="./proj/neuroscan/dist.py" target="_blank" class="launch-button">Launch Project</a> <!--Add Download btn-->
+          <!--<a href="./proj/neuroscan/dist.py" target="_blank" class="launch-button">Launch Project</a>-->
       </div>
     </div>
 
@@ -256,7 +259,7 @@
             <img src="./assets/isearch.png" alt="iSearch Home Page" style="max-height:19.75vw; display:block; margin-left:auto; margin-right:auto;">
         </div>
         <p>Created using: Rust, SQLite</p>
-        <p>iSearch is a complete search engine that allows one to search through all the pages on Fandom using TF-IDF Vector Indexing, Cosine Similarity, and a SQLite Database with Diesel ORM.</p>
+        <p>iSearch is a complete search engine that allows one to search through all the pages on Wikipedia using TF-IDF Vector Indexing, Cosine Similarity, and a SQLite Database with Diesel ORM. It uses a multithreaded architecture to handle multiple search queries simultaneously, ensuring fast and efficient search results. Moreover, it's multithreaded architecture allows it to crawl, clean, and index pages extremely fast.</p>
         <a href="https://github.com/ishan211/isearch" class="repo-button">Open Repository</a>
         <!-- <a href="" class="launch-button">Launch Project</a> -->
       </div>
@@ -300,7 +303,7 @@
           <p>Created using: HTML, CSS, JavaScript</p>
           <p>A budget tracker that combines multiple different JavaScript methods to create a robust web app with all the features needed to use this app for financial tracking.</p>
           <a href="https://github.com/ishan211/Budget-Tracker" target="_blank" class="repo-button">Open Repository</a>
-          <a href="./proj/budget-app/index.html" target="_blank" class="launch-button">Launch Project</a> 
+          <!--<a href="./proj/budget-app/index.html" target="_blank" class="launch-button">Launch Project</a>--> 
       </div>
     </div>
 
@@ -314,7 +317,7 @@
         <p>Created using: Python [sys, PyQT5]</p>
         <p>PySurfer, a robust Python based web browser that has all the features of a modern web browser. I made this project as a way to improve my Python development skills.</p>
         <a href="https://github.com/ishan211/PySurfer" class="repo-button">Open Repository</a>
-        <a href="" class="launch-button">Launch Project</a> <!--Add Launch btn-->
+        <!--<a href="" class="launch-button">Launch Project</a>-->
       </div>
     </div>
 
